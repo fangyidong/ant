@@ -15,5 +15,9 @@ lm:lua_src "filedialog" {
     },
     macos = {
         sources =  "filedialog.mm",
-    }
+    },
+
+    linux = {
+        sources =  "filedialog_x11.cpp",
+    },
 }

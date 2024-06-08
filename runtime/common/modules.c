@@ -146,12 +146,10 @@ void ant_loadmodules(lua_State* L) {
         { "ozz.offline", luaopen_ozz_offline },
         { "bee.filewatch", luaopen_bee_filewatch },
         { "bee.subprocess", luaopen_bee_subprocess },
-#if !BX_PLATFORM_LINUX
-        { "filedialog", luaopen_filedialog },
-#endif
 #endif
         { "window", luaopen_window },
         { "font.util", luaopen_font_util },
+        { "filedialog", luaopen_filedialog },
 #if !BX_PLATFORM_LINUX
         { "httpc", luaopen_httpc },
 #endif
